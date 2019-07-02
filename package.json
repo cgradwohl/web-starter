@@ -1,7 +1,7 @@
 {
   "name": "web-starter",
   "version": "1.0.0",
-  "description": "react | webpack | babel | eslint | bulma | styled-components | jest | routing | authentication | deployment",
+  "description": "react | webpack | babel | eslint | bulma | styled-components | jest | react-router-dom | JWT | circleci",
   "main": "index.js",
   "author": "C S Gradwohl",
   "license": "MIT",
