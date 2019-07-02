@@ -1,23 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import { library } from '@fortawesome/fontawesome-svg-core';
+import fontawesome from './utils/fontawesome';
+
 import Layout from './Layout';
+import Error from './pages/Error';
+
+import Navbar from './components/Navbar';
 
 import './static/custom-bulma.min.css';
+
+library.add(fontawesome);
 
 if (process.env.NODE_ENV !== 'production') {
   console.log('Looks like we are in development mode!');
 }
 
 const App = () => (
-  <Layout>
-    <React.Suspense fallback={<div>Loading...</div>}>
-      <div>
-        <span>Hello React, Webpack 4 & Babel 7!</span>
-        <button type="button" className="button is-primary">Login</button>
-      </div>
-    </React.Suspense>
-  </Layout>
+  <Error>
+    <Layout>
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <div>
+          <Navbar />
+        </div>
+      </React.Suspense>
+    </Layout>
+  </Error>
 );
 
 ReactDOM.render(<App />, document.querySelector('#root'));
