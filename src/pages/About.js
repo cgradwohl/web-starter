@@ -9,7 +9,17 @@ const MyButton = styed.button`
 `;
 
 export default () => (
-  <>
+  <section className="hero is-medium is-primary is-bold">
+    <div className="hero-body">
+      <div className="container">
+        <h1 className="title">
+          Primary bold title
+        </h1>
+        <h2 className="subtitle">
+          Primary bold subtitle
+        </h2>
+      </div>
+    </div>
     <div className="columns">
       <div className="column">
         <span className="icon">
@@ -52,5 +62,5 @@ export default () => (
         <button className="button is-large is-success" type="button">Button</button>
       </div>
     </div>
-  </>
+  </section>
 );
