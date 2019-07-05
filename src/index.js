@@ -7,7 +7,6 @@ import fontawesome from './utils/fontawesome';
 
 import Layout from './Layout';
 
-import './static/custom-bulma.min.css';
 import Index from './pages/Index';
 import About from './pages/About';
 

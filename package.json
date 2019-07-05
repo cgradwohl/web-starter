@@ -1,7 +1,7 @@
 {
   "name": "web-starter",
   "version": "1.0.0",
-  "description": "react | webpack | babel | eslint | bulma | styled-components | jest | react-router-dom | JWT | circleci",
+  "description": "react | webpack | babel | eslint | styled-system | rebass grid | jest | navi | circleci",
   "main": "index.js",
   "author": "C S Gradwohl",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.9.0",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@fortawesome/react-fontawesome": "^0.1.4",
+    "@rebass/grid": "^6.0.0",
     "clean-webpack-plugin": "^3.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
@@ -27,6 +28,7 @@
     "react-dom": "^16.8.6",
     "react-navi": "^0.12.9",
     "styled-components": "^4.3.2",
+    "styled-system": "^5.0.12",
     "terser-webpack-plugin": "^1.3.0",
     "webpack-merge": "^4.2.1"
   },
