@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
-import { mount, route, lazy } from 'navi';
+import { mount, route } from 'navi';
 import { Router, View } from 'react-navi';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import fontawesome from './utils/fontawesome';
