@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { Button, Card, Flex, Text } from 'rebass';
+import {
+  Button,
+  Card,
+  Flex,
+  Text,
+} from 'rebass';
 
 import { useUser } from '../context/user';
 import { useCount } from '../context/count';
