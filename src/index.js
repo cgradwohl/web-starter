@@ -4,6 +4,8 @@ import { mount, route } from 'navi';
 import { Router, View } from 'react-navi';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import fontawesome from './utils/fontawesome';
+import AppTheme from './theme';
+import { ThemeProvider } from 'styled-components';
 
 import Layout from './Layout';
 
@@ -26,13 +28,15 @@ const routes = mount({
 });
 
 const App = () => (
-  <Router routes={routes}>
-    <Layout>
-      <Suspense fallback={null}>
-        <View />
-      </Suspense>
-    </Layout>
-  </Router>
+  <ThemeProvider theme={AppTheme}>
+    <Router routes={routes}>
+      <Layout>
+        <Suspense fallback={null}>
+          <View />
+        </Suspense>
+      </Layout>
+    </Router>
+  </ThemeProvider>
 );
 
 ReactDOM.render(<App />, document.querySelector('#root'));

@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 import BusyIndicator from 'react-busy-indicator';
 import { NotFoundBoundary, useLoadingRoute } from 'react-navi';
 
+import { Flex, Box } from 'rebass';
+
 import Navbar from './components/Navbar';
 
 function renderNotFound() {
   return (
-    <div className="Layout-error">
+    <div>
       <h1>404 - Not Found</h1>
     </div>
   );
@@ -19,16 +21,17 @@ function Layout({ children }) {
   const loadingRoute = useLoadingRoute();
 
   return (
-    <div className="container is-widescreen">
-      {/* This component shows a loading indicator after a delay */}
-      <BusyIndicator isBusy={!!loadingRoute} delayMs={200} />
-      <Navbar />
-      <main>
+    <Flex justifyContent="center">
+      <Box
+        width={2 / 3}
+      >
+        <BusyIndicator isBusy={!!loadingRoute} delayMs={200} />
+        <Navbar />
         <NotFoundBoundary render={() => renderNotFound()}>
           {children}
         </NotFoundBoundary>
-      </main>
-    </div>
+      </Box>
+    </Flex>
   );
 }
 
