@@ -14,7 +14,7 @@ export default () => (
   >
     <Text fontFamily="main">
       we lit!!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Nam ratione natus molestias dignissimos rem qui tempora amet molestiae
+      Nam ratione natusdcdc molestias dignissimos rem qui tempora amet molestiae
       porro voluptatibus quae aliquam harum, esse culpa inventore quaerat
       corporis non iusto?
 
