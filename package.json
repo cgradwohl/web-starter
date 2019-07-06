@@ -1,7 +1,7 @@
 {
   "name": "web-starter",
   "version": "1.0.0",
-  "description": "react | webpack | babel | eslint | styled-system | rebass grid | jest | navi | circleci",
+  "description": "react | webpack | babel | eslint | styled-system | jest | navi | circleci",
   "main": "index.js",
   "author": "C S Gradwohl",
   "license": "MIT",
