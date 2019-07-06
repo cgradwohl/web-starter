@@ -14,6 +14,8 @@ import AppTheme from './theme';
 import Index from './pages/Index';
 import About from './pages/About';
 
+import AppProvider from './context/AppProvider';
+
 library.add(fontawesome);
 
 const routes = mount({
@@ -29,9 +31,11 @@ const App = () => (
   <ThemeProvider theme={AppTheme}>
     <Router routes={routes}>
       <Layout>
-        <Suspense fallback={null}>
-          <View />
-        </Suspense>
+        <AppProvider>
+          <Suspense fallback={null}>
+            <View />
+          </Suspense>
+        </AppProvider>
       </Layout>
     </Router>
   </ThemeProvider>
