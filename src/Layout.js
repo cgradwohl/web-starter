@@ -5,17 +5,17 @@ import { NotFoundBoundary, useLoadingRoute } from 'react-navi';
 
 import { Flex, Box } from 'rebass';
 
-import Navbar from './components/Navbar';
+import {
+  Navbar,
+} from './components';
 
-function renderNotFound() {
-  return (
-    <div>
-      <h1>404 - Not Found</h1>
-    </div>
-  );
-}
+const renderNotFound = () => (
+  <div>
+    <h1>404 - Not Found</h1>
+  </div>
+);
 
-function Layout({ children }) {
+const Layout = ({ children }) => {
   // If there is a route that hasn't finished loading, it can be
   // retrieved with `useLoadingRoute()`.
   const loadingRoute = useLoadingRoute();

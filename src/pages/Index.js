@@ -1,33 +1,14 @@
 import React from 'react';
 
 import {
-  Button,
   Card,
-  Flex,
   Text,
 } from 'rebass';
 
-import { useUser } from '../context/user';
-import { useCount } from '../context/count';
-
-const UserInfo = () => {
-  const [user] = useUser();
-  return (
-    <Flex>
-      <Text fontFamily="main">{user.name}</Text>
-    </Flex>
-  );
-};
-
-const Counter = () => {
-  const [count, setCount] = useCount();
-  return (
-    <Flex>
-      <span>{count}</span>
-      <Button bg="danger" onClick={() => setCount(x => x + 1)}>Click Me</Button>
-    </Flex>
-  );
-};
+import {
+  Counter,
+  UserInfo,
+} from '../components';
 
 export default () => (
   <Card

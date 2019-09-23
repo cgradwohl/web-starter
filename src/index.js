@@ -30,13 +30,13 @@ const routes = mount({
 const App = () => (
   <ThemeProvider theme={AppTheme}>
     <Router routes={routes}>
-      <Layout>
-        <AppProvider>
+      <AppProvider>
+        <Layout>
           <Suspense fallback={null}>
             <View />
           </Suspense>
-        </AppProvider>
-      </Layout>
+        </Layout>
+      </AppProvider>
     </Router>
   </ThemeProvider>
 );

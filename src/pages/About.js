@@ -1,17 +1,17 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Button, Card, Flex } from 'rebass';
-import { useCount } from '../context/count';
 
-const Counter = () => {
-  const [count, setCount] = useCount();
-  return (
-    <Flex>
-      <span>{count}</span>
-      <Button bg="danger" onClick={() => setCount(x => x + 1)}>Click Me</Button>
-    </Flex>
-  );
-};
+import {
+  FontAwesomeIcon,
+} from '@fortawesome/react-fontawesome';
+
+import {
+  Card,
+} from 'rebass';
+
+import {
+  Counter,
+  UserInfo,
+} from '../components';
 
 export default () => (
   <Card
@@ -23,6 +23,7 @@ export default () => (
     borderRadius={8}
     boxShadow="0 2px 16px rgba(0, 0, 0, 0.25)"
   >
+    <UserInfo />
     <FontAwesomeIcon icon={['fab', 'apple']} />
     <FontAwesomeIcon icon={['far', 'smile']} />
     <FontAwesomeIcon icon={['fab', 'github']} />
