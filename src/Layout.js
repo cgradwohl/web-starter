@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
       </Box>
     </Flex>
   );
-}
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
