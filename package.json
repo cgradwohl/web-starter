@@ -55,7 +55,7 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "husky": "^3.0.5",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "style-loader": "^0.23.1",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
